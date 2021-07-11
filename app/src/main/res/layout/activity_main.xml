@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dark"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageLight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLight"
+        android:layout_marginStart="15dp"
+        />
+    <ImageView
+        android:id="@+id/saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLight"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Buyer"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/arrow"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageLight"/>
+
+    <TextView
+        android:id="@+id/org"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Organization Name"
+        android:layout_marginStart="65dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/orgName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/orgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/Nam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/dark"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Nam"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        app:layout_constraintBottom_toTopOf="@+id/Number"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Ema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintBottom_toTopOf="@+id/Number"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Ema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Man"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Manufacturer"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Address"
+        app:layout_constraintBottom_toTopOf="@+id/Manu"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Manu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Man"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Ta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Id"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Manu"
+        app:layout_constraintBottom_toTopOf="@+id/Tax"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Ta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/Com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company Id"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/Tax"
+        app:layout_constraintBottom_toTopOf="@+id/Company"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/Company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Nam"
+        app:layout_constraintEnd_toStartOf="@+id/Nam"
+        android:src="@drawable/ic_identity"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Ema"
+        app:layout_constraintEnd_toStartOf="@+id/Ema"
+        android:src="@drawable/ic_email"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Num"
+        app:layout_constraintEnd_toStartOf="@+id/Num"
+        android:src="@drawable/ic_call"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Add"
+        app:layout_constraintEnd_toStartOf="@+id/Add"
+        android:src="@drawable/ic_location"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Man"
+        app:layout_constraintEnd_toStartOf="@+id/Man"
+        android:src="@drawable/ic_building"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Ta"
+        app:layout_constraintTop_toTopOf="@+id/Ta"
+        android:src="@drawable/ic_calculate"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/Com"
+        app:layout_constraintTop_toTopOf="@+id/Com"
+        android:src="@drawable/ic_fingerprint"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
